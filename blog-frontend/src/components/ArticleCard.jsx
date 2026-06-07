@@ -4,7 +4,7 @@ function ArticleCard({ article }) {
 
   const image =
     "http://localhost:1337" +
-    article.cover?.formats?.medium?.url;
+    (article.cover?.formats?.medium?.url || article.cover?.formats?.small?.url || article.cover?.url);
 
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow">
@@ -32,7 +32,7 @@ function ArticleCard({ article }) {
         <div className="flex justify-between items-center mt-4">
 
           <span className="text-sm">
-            {article.author?.name}
+            {article.postedBy?.username}
           </span>
 
           <Link
