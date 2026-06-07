@@ -1,0 +1,2 @@
+A full-stack blog platform built with React and Strapi CMS to explore how quickly production-ready backend functionality can be developed using a headless CMS.
+The goal of this project was not to build a blogging platform itself, but to evaluate Strapi as a backend solution. Through the project, I implemented authentication, content management, media uploads, relationships, authorization rules, and custom controller logic while significantly reducing the amount of backend code that would typically be required in a traditional Node.js application.
